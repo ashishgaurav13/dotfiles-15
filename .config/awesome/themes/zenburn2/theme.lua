@@ -6,7 +6,7 @@ theme.walldir   = theme.dir .. "wallpapers/"
 theme.tagdir    = theme.dir .. "taglist/"
 theme.layoutdir = theme.dir .. "layouts/"
 theme.titledir  = theme.dir .. "titlebar/"
-theme.wallpaper = theme.walldir .. "Pusteblume.png"
+theme.wallpaper = theme.walldir .. "winter-scene.png"
 -- }}}
 
 -- {{{ Styles
@@ -16,11 +16,11 @@ theme.font      = "Aller Bold 8"
 theme.tasklist_disable_icon = true
 
 -- {{{ Colors
-theme.fg_normal  = "#919191"
-theme.fg_focus   = "#F9F9F9"
-theme.fg_urgent  = "#DEDEDE"
-theme.bg_focus   = "#2D2D2D"
-theme.bg_urgent  = "#2D2D2D"
+theme.fg_normal  = "#2D2D2D"
+theme.fg_focus   = "#888888"
+theme.fg_urgent  = "#666666"
+theme.bg_focus   = "#EFEFEF"
+theme.bg_urgent  = "#D8D8D8"
 theme.bg_normal  = theme.bg_focus
 theme.bg_systray = theme.bg_normal
 -- }}}

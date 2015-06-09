@@ -3,7 +3,7 @@ URxvt.termName: rxvt-unicode-256color
 URxvt.geometry: 100x30
  
 ! Use a nice truetype font and size by default... 
-URxvt.font: xft:Terminus:size=8:antialias=true
+URxvt.font: xft:Inconsolata:size=8:antialias=true:pixelsize=12
 
 ! Every shell is a login shell by default (for inclusion of all necessary environment variables)
 URxvt.loginshell: true
@@ -14,8 +14,8 @@ URxvt.saveLines: 16384
 URxvt.charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
 ! DOS-box colours...
-URxvt.foreground: rgb:ff/ff/ff
-URxvt.background: rgb:2d/2d/2d
+URxvt.foreground: rgb:2d/2d/2d
+URxvt.background: rgb:ef/ef/ef
 ! white
 URxvt.color0: rgb:00/00/00
 ! red

@@ -142,7 +142,7 @@ lyxlauncher:buttons(awful.util.table.join(
 flauncher  = wibox.widget.imagebox()
 flauncher:set_image(beautiful.folder_icon)
 flauncher:buttons(awful.util.table.join(
-  awful.button({ }, 1, function() awful.util.spawn(terminal .. "ranger /home/agaurav77/Programs/NaCl") end)))
+  awful.button({ }, 1, function() awful.util.spawn(terminal .. " -e ranger /home/agaurav77/Programs/NaCl") end)))
 chromelauncher  = wibox.widget.imagebox()
 chromelauncher:set_image(beautiful.chrome_icon)
 chromelauncher:buttons(awful.util.table.join(
@@ -165,9 +165,9 @@ batwidgettimer:connect_signal("timeout",
 --		fmin = assert(io.popen("acpi | cut -d, -f 3 - | cut -d' ' -f 2 | cut -d':' -f 2", "r"))
 		if (fh2:read("*l") == "Discharging,") then
 --			batwidget:set_markup("<span color='green'>[</span><span color='white'>" .. fh:read("*l") .. " (" .. fhrs:read("*l") .. " hrs, " .. fmin:read("*l") .. " mins)" .. "</span><span color='green'> ]</span>")
-			batwidget:set_markup("<span color='pink'>[</span><span color='white'>" .. fh:read("*l") .. "%</span><span color='pink'> ] </span>")
+			batwidget:set_markup("<span color='#666666'>[</span><span color='#2d2d2d'>" .. fh:read("*l") .. "%</span><span color='#666666'> ] </span>")
 		else
-			batwidget:set_markup("<span color='yellow'>[</span><span color='white'>" .. fh:read("*l") .. "%</span><span color='yellow'> ] </span>")
+			batwidget:set_markup("<span color='#888888'>[</span><span color='#2d2d2d'>" .. fh:read("*l") .. "%</span><span color='#888888'> ] </span>")
 		end
 		fh:close()
 		fh2:close()
@@ -268,7 +268,7 @@ vicious.register(mygmail, vicious.widgets.gmail,
       if args["{count}"] == 0 then
         return ""
       else
-        return "<span color='white'>[ " .. args["{count}"] .. " unread ]</span> "
+        return "<span color='#888888'>[ " .. args["{count}"] .. " unread ]</span> "
       end
     end, 120)
 
